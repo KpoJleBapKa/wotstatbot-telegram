@@ -2,6 +2,7 @@ import requests
 from aiogram import Router, types
 from aiogram.enums import ParseMode
 from aiogram.filters import Command
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import config
 
@@ -151,3 +152,5 @@ async def get_clan_members(message: types.Message):
                 parse_mode=ParseMode.HTML,
             )
             leaderboard = ""
+
+
